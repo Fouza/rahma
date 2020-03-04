@@ -54,7 +54,7 @@
                     <td>Winters</td>
                     <td>539 OB 452</td>
                     <td>04/02/2020</td>
-                    <td>12/03/2020</td>
+                    <td>Jusqu'à aujourd'hui</td>
                 </tr>
                 <tr>
                     <td>Ashton</td>
@@ -68,7 +68,7 @@
                     <td>Kelly</td>
                     <td>967 UH 000</td>
                     <td>14/02/2020</td>
-                    <td>29/03/2020</td>
+                    <td>Jusqu'à aujourd'hui</td>
                 </tr>
                 <tr>
                     <td>Jenette</td>
@@ -82,7 +82,7 @@
                     <td>Berry</td>
                     <td>324 KG 345</td>
                     <td>15/02/2020</td>
-                    <td>25/03/2020</td>
+                    <td>Jusqu'à aujourd'hui</td>
                 </tr>
                 <tr>
                     <td>Caesar</td>
@@ -95,7 +95,7 @@
                     <td>Doris</td>
                     <td>Wilder</td>
                     <td>456 IH 367</td>
-                    <td>16/02/2020</td>
+                    <td>Aujourd'hui</td>
                     <td>19/06/2020</td>
                 </tr>
                 <tr>
@@ -109,7 +109,7 @@
                     <td>Gavin</td>
                     <td>Joyce</td>
                     <td>235 PG 346</td>
-                    <td>27/02/2020</td>
+                    <td>Aujourd'hui</td>
                     <td>27/03/2020</td>
                 </tr>
                 <tfoot>

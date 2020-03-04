@@ -36,201 +36,89 @@
                 <tr>
                     <th>Prénom</th>
                     <th>Nom</th>
-                    <th>Plateforme</th>
                     <th>Matricule</th>
-                    <th>Prix/Jour</th>
+                    <th>Date début</th>
+                    <th>Date fin</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Tiger</td>
                     <td>Nixon</td>
-                    <td>Uber</td>
                     <td>Edinburgh</td>
+                    <td>$320,800</td>
                     <td>$320,800</td>
                 </tr>
                 <tr>
                     <td>Garrett</td>
                     <td>Winters</td>
-                    <td>Uber</td>
                     <td>Tokyo</td>
+                    <td>$170,750</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Ashton</td>
                     <td>Cox</td>
-                    <td>Kapten</td>
                     <td>San Francisco</td>
+                    <td>$86,000</td>
                     <td>$86,000</td>
                 </tr>
                 <tr>
                     <td>Cedric</td>
                     <td>Kelly</td>
-                    <td>Heetch</td>
                     <td>Edinburgh</td>
                     <td>$433,060</td>
-                </tr>
-                <tr>
-                    <td>Airi</td>
-                    <td>Satou</td>
-                    <td>Uber</td>
-                    <td>Tokyo</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td>Brielle</td>
-                    <td>Williamson</td>
-                    <td>Uber Specialist</td>
-                    <td>New York</td>
-                    <td>$372,000</td>
-                </tr>
-                <tr>
-                    <td>Herrod</td>
-                    <td>Chandler</td>
-                    <td>Heetch</td>
-                    <td>San Francisco</td>
-                    <td>$137,500</td>
-                </tr>
-                <tr>
-                    <td>Rhona</td>
-                    <td>Davidson</td>
-                    <td>Kapten</td>
-                    <td>Tokyo</td>
-                    <td>$327,900</td>
-                </tr>
-                <tr>
-                    <td>Colleen</td>
-                    <td>Hurst</td>
-                    <td>Heetch</td>
-                    <td>San Francisco</td>
-                    <td>$205,500</td>
-                </tr>
-                <tr>
-                    <td>Sonya</td>
-                    <td>Frost</td>
-                    <td>Allocab</td>
-                    <td>Edinburgh</td>
-                    <td>$103,600</td>
-                </tr>
-                <tr>
-                    <td>Jena</td>
-                    <td>Gaines</td>
-                    <td>Bolt</td>
-                    <td>London</td>
-                    <td>$90,560</td>
-                </tr>
-                <tr>
-                    <td>Quinn</td>
-                    <td>Flynn</td>
-                    <td>Uber</td>
-                    <td>Edinburgh</td>
-                    <td>$342,000</td>
-                </tr>
-                <tr>
-                    <td>Charde</td>
-                    <td>Marshall</td>
-                    <td>Heetch</td>
-                    <td>San Francisco</td>
-                    <td>$470,600</td>
-                </tr>
-                <tr>
-                    <td>Haley</td>
-                    <td>Kennedy</td>
-                    <td>Heetch</td>
-                    <td>London</td>
-                    <td>$313,500</td>
-                </tr>
-                <tr>
-                    <td>Tatyana</td>
-                    <td>Fitzpatrick</td>
-                    <td>Kapten</td>
-                    <td>London</td>
-                    <td>$385,750</td>
-                </tr>
-                <tr>
-                    <td>Michael</td>
-                    <td>Silva</td>
-                    <td>Bolt </td>
-                    <td>London</td>
-                    <td>$198,500</td>
-                </tr>
-                <tr>
-                    <td>Paul</td>
-                    <td>Byrd</td>
-                    <td>Kapten</td>
-                    <td>New York</td>
-                    <td>$725,000</td>
-                </tr>
-                <tr>
-                    <td>Gloria</td>
-                    <td>Little</td>
-                    <td>Allocab </td>
-                    <td>New York</td>
-                    <td>$237,500</td>
-                </tr>
-                <tr>
-                    <td>Bradley</td>
-                    <td>Greer</td>
-                    <td>Uber</td>
-                    <td>London</td>
-                    <td>$132,000</td>
-                </tr>
-                <tr>
-                    <td>Dai</td>
-                    <td>Rios</td>
-                    <td>Kapten</td>
-                    <td>Edinburgh</td>
-                    <td>$217,500</td>
+                    <td>$433,060</td>
                 </tr>
                 <tr>
                     <td>Jenette</td>
                     <td>Caldwell</td>
-                    <td>Allocab</td>
                     <td>New York</td>
+                    <td>$345,000</td>
                     <td>$345,000</td>
                 </tr>
                 <tr>
                     <td>Yuri</td>
                     <td>Berry</td>
-                    <td>Allocab</td>
                     <td>New York</td>
                     <td>$675,000</td>
+                    <td>$345,000</td>
                 </tr>
                 <tr>
                     <td>Caesar</td>
                     <td>Vance</td>
-                    <td>Heetch </td>
                     <td>New York</td>
+                    <td>$106,450</td>
                     <td>$106,450</td>
                 </tr>
                 <tr>
                     <td>Doris</td>
                     <td>Wilder</td>
-                    <td>Allocab</td>
                     <td>Sydney</td>
+                    <td>$85,600</td>
                     <td>$85,600</td>
                 </tr>
                 <tr>
                     <td>Angelica</td>
                     <td>Ramos</td>
-                    <td>Bolt</td>
                     <td>London</td>
+                    <td>$1,200,000</td>
                     <td>$1,200,000</td>
                 </tr>
                 <tr>
                     <td>Gavin</td>
                     <td>Joyce</td>
-                    <td>Uber</td>
                     <td>Edinburgh</td>
+                    <td>$92,575</td>
                     <td>$92,575</td>
                 </tr>
                 <tfoot>
                     <tr>
                         <th>Prénom</th>
                         <th>Nom</th>
-                        <th>Plateforme</th>
                         <th>Matricule</th>
-                        <th>Prix/Jour</th>
+                        <th>Date début</th>
+                        <th>Date fin</th>
                     </tr>
                 </tfoot>
             </tbody>

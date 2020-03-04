@@ -7,7 +7,14 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-
+    <style>
+        .side_logo{
+            width: 90%;
+            margin-left: 4%;
+            margin-top:20%;
+            opacity: 0.5;
+        }
+    </style>
 
 @stop
 @section('content_header')

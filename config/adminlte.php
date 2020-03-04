@@ -30,8 +30,8 @@ return [
     |
     */
 
-    'logo' => '<b>Rahma</b>Accountement',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Rahma</b> Acc',
+    'logo_img' => 'vendor/adminlte/dist/img/rahma.jpg',
     'logo_img_class' => 'brand-image-xl',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',

@@ -43,9 +43,6 @@
                     <th>Bonus</th>
                     <th>avance</th>
                     <th>Total</th>
-                    <th>Trésorerie</th>
-                    <th>Nabil</th>
-                    <th>Nazih</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,9 +51,6 @@
                     <td>123 AJ 213</td>
                     <td>Uber</td>
                     <td>Carte</td>
-                    <td>$320,800</td>
-                    <td>$320,800</td>
-                    <td>$320,800</td>
                     <td>$320,800</td>
                     <td>$320,800</td>
                     <td>$320,800</td>
@@ -73,9 +67,6 @@
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Ashton Cox</td>
@@ -83,9 +74,6 @@
                     <td>Kapten</td>
                     <td>Carte/Espèce</td>
                     <td>$86,000</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
@@ -101,9 +89,6 @@
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Airi Satou</td>
@@ -111,9 +96,6 @@
                     <td>Uber</td>
                     <td>Carte</td>
                     <td>$162,700</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
@@ -129,9 +111,6 @@
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Herrod Chandler</td>
@@ -139,9 +118,6 @@
                     <td>Heetch</td>
                     <td>Carte</td>
                     <td>$137,500</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
@@ -157,9 +133,6 @@
                     <td>$327,900</td>
                     <td>$327,900</td>
                     <td>$327,900</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Gavin Joyce</td>
@@ -171,9 +144,6 @@
                     <td>$92,575</td>
                     <td>$92,575</td>
                     <td>$92,575</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
                 </tr>
                 <tfoot>
                     <tr>
@@ -186,9 +156,6 @@
                         <th>Bonus</th>
                         <th>avance</th>
                         <th>Total</th>
-                        <th>Trésorerie</th>
-                        <th>Nabil</th>
-                        <th>Nazih</th>
                     </tr>
                 </tfoot>
             </tbody>

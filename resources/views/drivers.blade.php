@@ -5,7 +5,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Véhicules</h1>
+    <h1>Chauffeurs</h1>
 @stop
 
 @section('adminlte_css')
@@ -19,7 +19,7 @@
 
 @stop
 @section('content')
-    <p>Consulter vos véhciules et suivez leurs états actuels : disponible ou louée.</p>
+    <p>Consulter les chauffeurs et les états de leurs permis de conduire ainsi que les plateformes dans lesquelles ils travaillent.</p>
     <div class="row float-right">
         <div class="col-lg-12 operations">
             <button class="btn btn-outline-secondary">Ajouter</button>

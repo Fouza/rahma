@@ -1,6 +1,7 @@
 @extends('adminlte::master')
 
 @section('adminlte_css')
+
     @stack('css')
     @yield('css')
 @stop
@@ -141,9 +142,13 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column {{config('adminlte.classes_sidebar_nav', '')}}" data-widget="treeview" role="menu" @if(config('adminlte.sidebar_nav_animation_speed') != 300) data-animation-speed="{{config('adminlte.sidebar_nav_animation_speed')}}" @endif @if(!config('adminlte.sidebar_nav_accordion')) data-accordion="false" @endif>
                         @each('adminlte::partials.menu-item', $adminlte->menu(), 'item')
+
                     </ul>
+
                 </nav>
+
             </div>
+        <img src="{{ asset('img/rahma.jpg') }}" alt="" class="side_logo">
         </aside>
         @endif
 
@@ -166,12 +171,14 @@
             @if(config('adminlte.layout_topnav') || View::getSection('layout_topnav'))
             </div>
             @endif
+
         </div>
 
         @hasSection('footer')
         <footer class="main-footer">
 
             @yield('footer')
+
         </footer>
         @endif
 

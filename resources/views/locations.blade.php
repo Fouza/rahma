@@ -17,8 +17,15 @@
         padding: 3px;
         box-sizing: border-box;
     }
-
+    .side_logo{
+        width: 90%;
+        margin-left: 4%;
+        margin-top:20%;
+        opacity: 0.5;
+    }
 </style>
+
+
 
 @stop
 @section('content')

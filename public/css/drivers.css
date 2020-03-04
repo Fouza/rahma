@@ -1,0 +1,66 @@
+.card.maximized-card{
+    height: 330px !important;
+    width: 640px !important;
+}
+
+.cardriver{
+    margin-right:-9%;
+}
+
+.card-body{
+    height: 170px;
+}
+
+@media(max-width:575px){
+    .body-imp{
+        max-width: 40%;
+    }
+
+    .write{
+        max-width: 120px;
+    }
+    .card.maximized-card {
+        max-height: 65% !important;
+        max-width: 85% !important;
+        height: 348px !important;
+        width: 220px !important;
+        max-height: 420px;
+        top:55%;
+        left:50%;
+        font-size: 11px;
+    }
+    .shown{
+        font-size: 11px;
+    }
+    .card-body{
+        height: 220px;
+    }
+    .card{
+        height: 220px;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:732px) and (min-width:576px){
+    .card{
+        min-width: 200px !important;
+        max-width:1100px !important;
+        margin-right:2%;
+        font-size: 12px;
+        width:200px;
+    }
+
+    .card.card.maximized-card{
+        height: 310px !important;
+        width: 500px !important;
+        top:55%;
+        left:50%;
+    }
+    .cardbox{
+        margin-right:4%;
+    }
+    .card-body{
+        height: 180px;
+    }
+
+}

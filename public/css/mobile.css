@@ -1,0 +1,38 @@
+@media screen and (max-width:575px){
+    .card {
+        min-width: 200px !important;
+        max-width: 250px !important;
+        margin-right: 2%;
+        font-size: 12px;
+        width: 85%;
+        height: 150px;
+    }
+
+    .write{
+        max-width: 90px;
+    }
+    .card.maximized-card .body-imp{
+        display:none;
+    }
+    .btn-tool{
+        left:58%;
+    }
+    .card.maximized-card{
+        /*max-height: 65% !important;
+        max-width: 85% !important;*/
+        height:420px !important;
+        width: 270px !important;
+        max-height: 420px;
+        font-size: 12px;
+    }
+    .card.maximized-card .write{
+        max-width: 235px;
+    }
+    .card.maximized-card .body-imp{
+        max-width: 45%;
+    }
+    .card.maximized-card .card-body div{
+        padding-left: 10px;
+        padding-right: 0.5px;
+    }
+}

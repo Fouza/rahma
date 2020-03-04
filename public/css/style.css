@@ -1,0 +1,180 @@
+.card{
+    max-width: 80%;
+}
+.card-body div{
+    padding-left: 0.5px;
+    padding-right:0.5px;
+}
+.card-image{
+    width:50%;
+    max-height: 85%;
+    position: relative;
+    font-size:small;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    max-width: 60%;
+    transform: translate(-50%, -50%)
+}
+.card div div p, .card div p{
+    display:none;
+    z-index:-3;
+}
+
+/*.maximized-card .write{
+    top: 80%;
+    left: 30%;
+    margin-right: -50%;
+    max-width: 60%;
+    transform: translate(-50%, -50%)
+}*/
+
+.card.maximized-card div div p, .card.maximized-card div p{
+    display: block !important;
+    z-index:-1 !important;
+}
+.card.maximized-card{
+    /*max-height: 70% !important;
+    max-width: 60% !important;*/
+    height:380px !important;
+    width: 740px !important;
+    position: fixed;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+
+.card.maximized-card .card-body{
+    min-height: 40%;
+}
+.shown{
+    display: block !important;
+    z-index:0 !important;
+    font-size: small;
+}
+
+.body-imp{
+    max-width: 50%;
+}
+
+.card-body{
+    padding:0;
+    height:80px;
+}
+
+p{
+    margin:0.25rem;
+}
+
+.progress-head{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin-right: -50%;
+    max-width: 60%;
+    transform: translate(-50%, -50%)
+}
+
+.btn-tool{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+/*.card-footer{
+    display: none;
+}*/
+.card .card-body .col-lg-8 .bar-hide{
+    display:none;
+}
+.card .card-body .col-lg-6 .bar-hide{
+    display:none;
+}
+.maximized-card{
+    font-size: small;
+}
+.maximized-card .card-footer{
+    display:flex;
+    justify-content: right;
+}
+.maximized-card .card-body .col-lg-8 .bar-hide{
+    display:block !important;
+}
+.maximized-card .card-body .col-lg-6 .bar-hide{
+    display:block !important;
+}
+.maximized-card .card-body .col-lg-6 .bar-hide-fils{
+    display:none;
+}
+
+.maximized-card .card-body .col-lg-6 .bar-hide-fils{
+    display:block !important;
+}
+
+.card-tools{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.cardbox{
+    margin-right:-5%;
+}
+.maximized-card .custom-file, .maximized-card .sub {
+    display:block;
+    position: relative;
+    overflow: hidden;
+    margin:5px;
+}
+.custom-file, .sub{
+    display:none;
+}
+.sub{
+    width:70px;
+}
+input {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.btn-document{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.form-document{
+    margin-top: 30px;
+}
+
+.footer-btn{
+    margin-left: 10px;
+}
+
+.footer-btn, .btn-doc{
+    display: none;
+}
+
+.card.maximized-card .btn-doc, .card.maximized-card .footer-btn{
+    display:inline;
+}
+
+.logos{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+}
+
+.operations{
+    margin-right: 70px;
+}
+

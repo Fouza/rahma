@@ -1,0 +1,26 @@
+.main-sidebar{
+    background-color: white;
+
+}
+
+.nav-link{
+    color: #535f66 !important
+}
+
+.brand-link{
+    border-bottom: 0.1px solid #e6ecf0 !important;
+    color :#535f66 !important;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: #d6d6d6;
+}
+
+.entretien-img{
+    width:80%;
+    height: auto;
+    margin-bottom: 10%;
+}
+.ouf{
+    line-height:0.75rem;
+}

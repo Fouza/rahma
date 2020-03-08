@@ -24,6 +24,9 @@
         margin-top:20%;
         opacity: 0.5;
     }
+    td{
+        text-align: center;
+    }
 </style>
 
 

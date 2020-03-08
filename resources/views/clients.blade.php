@@ -10,7 +10,7 @@
 
 @section('adminlte_css')
 <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style1.css') }}">
 <link rel="stylesheet" media="screen and (min-device-width: 576px)" href="{{ asset('css/tablet.css') }}">
 <link rel="stylesheet" href="{{ asset('css/global.css') }}">
 <link rel="stylesheet" href="{{ asset('css/clients.css') }}">
@@ -20,7 +20,41 @@
     <p>Consulter les plateformes partenaires.</p>
     <div class="row float-right">
         <div class="col-lg-12 operations">
-            <button class="btn btn-outline-secondary">Ajouter</button>
+            <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModalLong">Ajouter une plateforme</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Formualire d'ajout d'une plateforme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                          <label for="marque">Nom</label>
+                          <input type="" class="form-control" id="marque" placeholder="Entrez le nom de la plateforme">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Importer une image</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile2">Importer un contrat</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile2">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
     <br><br>

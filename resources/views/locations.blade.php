@@ -46,7 +46,6 @@
                     <th>Matricule</th>
                     <th>Date début</th>
                     <th>Date fin</th>
-                    <th>Comptabiliser</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,7 +55,6 @@
                     <td>234 KA 346</td>
                     <td>03/01/2020</td>
                     <td>04/05/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-done"></i></td>
                 </tr>
                 <tr>
                     <td>Garrett</td>
@@ -64,7 +62,6 @@
                     <td>539 OB 452</td>
                     <td>04/02/2020</td>
                     <td>Jusqu'à aujourd'hui</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-wait"></i></td>
                 </tr>
                 <tr>
                     <td>Ashton</td>
@@ -72,7 +69,6 @@
                     <td>948 DK 456</td>
                     <td>15/02/2020</td>
                     <td>25/03/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-wait"></i></td>
                 </tr>
                 <tr>
                     <td>Cedric</td>
@@ -80,7 +76,6 @@
                     <td>967 UH 000</td>
                     <td>14/02/2020</td>
                     <td>Jusqu'à aujourd'hui</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-done"></i></td>
                 </tr>
                 <tr>
                     <td>Jenette</td>
@@ -88,7 +83,6 @@
                     <td>523 YH 356</td>
                     <td>03/01/2020</td>
                     <td>04/05/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-done"></i></td>
                 </tr>
                 <tr>
                     <td>Yuri</td>
@@ -96,7 +90,6 @@
                     <td>324 KG 345</td>
                     <td>15/02/2020</td>
                     <td>Jusqu'à aujourd'hui</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-wait"></i></td>
                 </tr>
                 <tr>
                     <td>Caesar</td>
@@ -104,7 +97,6 @@
                     <td>586 LD 346</td>
                     <td>14/02/2020</td>
                     <td>29/03/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-done"></i></td>
                 </tr>
                 <tr>
                     <td>Doris</td>
@@ -112,7 +104,6 @@
                     <td>456 IH 367</td>
                     <td>Aujourd'hui</td>
                     <td>19/06/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-done"></i></td>
                 </tr>
                 <tr>
                     <td>Angelica</td>
@@ -120,7 +111,6 @@
                     <td>457 NB 467</td>
                     <td>03/03/2020</td>
                     <td>27/05/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-done"></i></td>
                 </tr>
                 <tr>
                     <td>Gavin</td>
@@ -128,7 +118,6 @@
                     <td>235 PG 346</td>
                     <td>Aujourd'hui</td>
                     <td>27/03/2020</td>
-                    <td><i class="fas fa-hand-holding-usd cpt-wait"></i></td>
                 </tr>
                 <tfoot>
                     <tr>
@@ -137,7 +126,6 @@
                         <th>Matricule</th>
                         <th>Date début</th>
                         <th>Date fin</th>
-                        <th>Comptabiliser</th>
                     </tr>
                 </tfoot>
             </tbody>

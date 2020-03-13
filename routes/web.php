@@ -35,3 +35,9 @@ Route::get('/admin/users', function () {
 Route::get('/locations', function () {
     return view('/locations');
 });
+Route::get('/partners', function () {
+    return view('/partners');
+});
+Route::get('/finance', function () {
+    return view('/finance');
+});

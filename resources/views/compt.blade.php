@@ -12,9 +12,9 @@
 <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="{{ asset('css/global.css') }}">
 <style>
-    tfoot input {
+    thead input {
         width: 100%;
-        padding: 3px;
+        padding: 6px;
         box-sizing: border-box;
     }
     .side_logo{
@@ -22,6 +22,12 @@
         margin-left: 4%;
         margin-top:20%;
         opacity: 0.5;
+    }
+    .myInput{
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
+        display: inline-block;
+        float:right;
     }
 </style>
 
@@ -36,17 +42,21 @@
     <br><br>
     <div class="row">
     <div class="col-lg-12 table">
+        <!--<label for="myInputTextField" class="myInput">
+            Numéro de semaine :
+            <input type="text" id="myInputTextField">
+        </label>-->
         <table id="myTable" class="display" style="width:90%">
             <thead>
                 <tr>
                     <th>Nom Prénom</th>
                     <th>Matricule</th>
                     <th>Plateforme</th>
-                    <th>Type de paiement</th>
                     <th>Gain</th>
                     <th>Pourboire</th>
                     <th>Bonus</th>
                     <th>avance</th>
+                    <th>Semaine</th>
                     <th>Total</th>
                 </tr>
             </thead>
@@ -55,99 +65,99 @@
                     <td>Tiger Nixon</td>
                     <td>123 AJ 213</td>
                     <td>Uber</td>
-                    <td>Carte</td>
                     <td>$320,800</td>
                     <td>$320,800</td>
                     <td>$320,800</td>
                     <td>$320,800</td>
+                    <td>5</td>
                     <td>$320,800</td>
                 </tr>
                 <tr>
                     <td>Garrett Winters</td>
-                    <td>597 PG 836</td>
+                    <td>497 PG 836</td>
                     <td>Uber</td>
-                    <td>Carte/Espèce</td>
+                    <td>$170,760</td>
+                    <td>$170,7630</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
-                    <td>$170,750</td>
-                    <td>$170,750</td>
+                    <td>6</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Ashton Cox</td>
                     <td>067 AA 573</td>
                     <td>Kapten</td>
-                    <td>Carte/Espèce</td>
                     <td>$86,000</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
+                    <td>6</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Cedric Kelly</td>
                     <td>067 AA 573</td>
                     <td>Heetch</td>
-                    <td>Carte/Espèce</td>
                     <td>$433,060</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
+                    <td>6</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Airi Satou</td>
                     <td>067 AA 573</td>
                     <td>Uber</td>
-                    <td>Carte</td>
                     <td>$162,700</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
+                    <td>7</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Brielle Williamson</td>
                     <td>479 NG 285</td>
                     <td>Uber Specialist</td>
-                    <td>Carte/Espèce</td>
                     <td>$372,000</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
+                    <td>7</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Herrod Chandler</td>
                     <td>959 GU 462</td>
                     <td>Heetch</td>
-                    <td>Carte</td>
                     <td>$137,500</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
                     <td>$170,750</td>
+                    <td>8</td>
                     <td>$170,750</td>
                 </tr>
                 <tr>
                     <td>Rhona Davidson</td>
                     <td>067 AA 573</td>
                     <td>Kapten</td>
-                    <td>Carte/Espèce</td>
                     <td>$327,900</td>
                     <td>$327,900</td>
                     <td>$327,900</td>
                     <td>$327,900</td>
+                    <td>8</td>
                     <td>$327,900</td>
                 </tr>
                 <tr>
                     <td>Gavin Joyce</td>
                     <td>957 JE 466</td>
                     <td>Uber</td>
-                    <td>Carte</td>
                     <td>$92,575</td>
                     <td>$92,575</td>
                     <td>$92,575</td>
                     <td>$92,575</td>
+                    <td>9</td>
                     <td>$92,575</td>
                 </tr>
                 <tfoot>
@@ -155,11 +165,11 @@
                         <th>Nom Prénom</th>
                         <th>Matricule</th>
                         <th>Plateforme</th>
-                        <th>Type de paiement</th>
                         <th>Gain</th>
                         <th>Pourboire</th>
                         <th>Bonus</th>
                         <th>avance</th>
+                        <th>Semaine</th>
                         <th>Total</th>
                     </tr>
                 </tfoot>
@@ -181,7 +191,7 @@
     <script>
         $(document).ready(function() {
             // Setup - add a text input to each footer cell
-            $('#myTable tfoot th').each( function () {
+            $('#myTable thead th').each( function () {
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="'+title+'" />' );
             } );
@@ -212,11 +222,16 @@
                 }
             });
 
+            /*oTable = $('#myTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+            $('#myInputTextField').keyup(function(){
+                oTable.search($(this).val()).draw() ;
+            })*/
+
             // Apply the search
             table.columns().every( function () {
                 var that = this;
 
-                $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                $( 'input', this.header() ).on( 'keyup change clear', function () {
                     if ( that.search() !== this.value ) {
                         that
                             .search( this.value )

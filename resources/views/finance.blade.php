@@ -39,7 +39,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  Chiffre semnaine dernière <span class="float-right badge bg-success">1200$</span>
+                  Chiffre semaine dernière <span class="float-right badge bg-success">1200$</span>
                 </a>
               </li>
               <li class="nav-item">

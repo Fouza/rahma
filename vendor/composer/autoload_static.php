@@ -39,6 +39,7 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         array (
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
+            'Waavi\\Sanitizer\\' => 16,
         ),
         'T' => 
         array (
@@ -161,6 +162,10 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Waavi\\Sanitizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/waavi/sanitizer/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -388,6 +393,10 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/league/color-extractor/src',
+    );
+
     public static $prefixesPsr0 = array (
         'M' => 
         array (
@@ -410,16 +419,31 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
     );
 
     public static $classMap = array (
+        'App\\Assurance' => __DIR__ . '/../..' . '/app/Assurance.php',
+        'App\\Car' => __DIR__ . '/../..' . '/app/Car.php',
+        'App\\Compte' => __DIR__ . '/../..' . '/app/Compte.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Controle' => __DIR__ . '/../..' . '/app/Controle.php',
+        'App\\Driver' => __DIR__ . '/../..' . '/app/Driver.php',
+        'App\\Entretien' => __DIR__ . '/../..' . '/app/Entretien.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AssuranceController' => __DIR__ . '/../..' . '/app/Http/Controllers/AssuranceController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\CarController' => __DIR__ . '/../..' . '/app/Http/Controllers/CarController.php',
+        'App\\Http\\Controllers\\CompteController' => __DIR__ . '/../..' . '/app/Http/Controllers/CompteController.php',
+        'App\\Http\\Controllers\\ControleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ControleController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DriverController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverController.php',
+        'App\\Http\\Controllers\\EntretienController' => __DIR__ . '/../..' . '/app/Http/Controllers/EntretienController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\LocationController' => __DIR__ . '/../..' . '/app/Http/Controllers/LocationController.php',
+        'App\\Http\\Controllers\\PartnerController' => __DIR__ . '/../..' . '/app/Http/Controllers/PartnerController.php',
+        'App\\Http\\Controllers\\PlatformController' => __DIR__ . '/../..' . '/app/Http/Controllers/PlatformController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -430,9 +454,19 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\BaseFormRequest' => __DIR__ . '/../..' . '/app/BaseFormRequest.php',
+        'App\\Http\\Requests\\CarStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CarStoreRequest.php',
+        'App\\Http\\Requests\\CarUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CarUpdateRequest.php',
+        'App\\Http\\Requests\\DriverStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/DriverStoreRequest.php',
+        'App\\Http\\Requests\\DriverUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/DriverUpdateRequest.php',
         'App\\Http\\Requests\\PasswordRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PasswordRequest.php',
+        'App\\Http\\Requests\\PlatformStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PlatformStoreRequest.php',
+        'App\\Http\\Requests\\PlatformUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PlatformUpdateRequest.php',
         'App\\Http\\Requests\\ProfileRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileRequest.php',
         'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
+        'App\\Location' => __DIR__ . '/../..' . '/app/Location.php',
+        'App\\Partner' => __DIR__ . '/../..' . '/app/Partner.php',
+        'App\\Platform' => __DIR__ . '/../..' . '/app/Platform.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2142,6 +2176,9 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'League\\ColorExtractor\\Color' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Color.php',
+        'League\\ColorExtractor\\ColorExtractor' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/ColorExtractor.php',
+        'League\\ColorExtractor\\Palette' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Palette.php',
         'League\\CommonMark\\Block\\Element\\AbstractBlock' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/AbstractBlock.php',
         'League\\CommonMark\\Block\\Element\\AbstractStringContainerBlock' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/AbstractStringContainerBlock.php',
         'League\\CommonMark\\Block\\Element\\BlockQuote' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/BlockQuote.php',
@@ -4427,6 +4464,24 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
+        'Waavi\\Sanitizer\\Contracts\\Filter' => __DIR__ . '/..' . '/waavi/sanitizer/src/Contracts/Filter.php',
+        'Waavi\\Sanitizer\\Filters\\Capitalize' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/Capitalize.php',
+        'Waavi\\Sanitizer\\Filters\\Cast' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/Cast.php',
+        'Waavi\\Sanitizer\\Filters\\Digit' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/Digit.php',
+        'Waavi\\Sanitizer\\Filters\\EscapeHTML' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/EscapeHTML.php',
+        'Waavi\\Sanitizer\\Filters\\FilterIf' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/FilterIf.php',
+        'Waavi\\Sanitizer\\Filters\\FormatDate' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/FormatDate.php',
+        'Waavi\\Sanitizer\\Filters\\Lowercase' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/Lowercase.php',
+        'Waavi\\Sanitizer\\Filters\\StripTags' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/StripTags.php',
+        'Waavi\\Sanitizer\\Filters\\Trim' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/Trim.php',
+        'Waavi\\Sanitizer\\Filters\\Uppercase' => __DIR__ . '/..' . '/waavi/sanitizer/src/Filters/Uppercase.php',
+        'Waavi\\Sanitizer\\Laravel\\Facade' => __DIR__ . '/..' . '/waavi/sanitizer/src/Laravel/Facade.php',
+        'Waavi\\Sanitizer\\Laravel\\Factory' => __DIR__ . '/..' . '/waavi/sanitizer/src/Laravel/Factory.php',
+        'Waavi\\Sanitizer\\Laravel\\FormRequest' => __DIR__ . '/..' . '/waavi/sanitizer/src/Laravel/FormRequest.php',
+        'Waavi\\Sanitizer\\Laravel\\RequestMakeCommand' => __DIR__ . '/..' . '/waavi/sanitizer/src/Laravel/RequestMakeCommand.php',
+        'Waavi\\Sanitizer\\Laravel\\SanitizerServiceProvider' => __DIR__ . '/..' . '/waavi/sanitizer/src/Laravel/SanitizerServiceProvider.php',
+        'Waavi\\Sanitizer\\Laravel\\SanitizesInput' => __DIR__ . '/..' . '/waavi/sanitizer/src/Laravel/SanitizesInput.php',
+        'Waavi\\Sanitizer\\Sanitizer' => __DIR__ . '/..' . '/waavi/sanitizer/src/Sanitizer.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
@@ -4526,6 +4581,7 @@ class ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit9a8e1cbf720aeae901a5e34f4b19ab19::$classMap;
 

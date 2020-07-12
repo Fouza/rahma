@@ -17,7 +17,7 @@ class CreatePlatformsTable extends Migration
             $table->bigIncrements('id');
             $table->string('nom');
             $table->string('logo');
-            $table->string('contrat');
+            $table->string('contrat')->nullable();
             $table->timestamps();
         });
     }

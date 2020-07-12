@@ -15,9 +15,11 @@ class CreateControlesTable extends Migration
     {
         Schema::create('controles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('contrat');
+            $table->string('contrat')->nullable();
+            //$table->datetime('ctrlTechDebut')->nullable();
+            $table->datetime('ctrlTechFin')->nullable();
             $table->unsignedBigInteger('car_id');
-            $table->foreign('car_id')->references('id')->on('cars');
+            $table->foreign('car_id')->references('id')->on('cars')->delete('cascade');
             $table->timestamps();
         });
     }

@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b580c2c7-e19f-4a54-8365-a927c595b137" name="Default Changelist" comment="" />
+    <list default="true" id="b580c2c7-e19f-4a54-8365-a927c595b137" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_144059_create_partners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_144059_create_partners_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_144259_create_platforms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_144259_create_platforms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_144423_create_drivers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_144423_create_drivers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_144442_create_cars_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_144442_create_cars_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_144540_create_locations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_144540_create_locations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_151757_create_controles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_151757_create_controles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_11_151821_create_assurances_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_11_151821_create_assurances_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/drivers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/drivers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/entretiens.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/entretiens.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parc.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parc.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -45,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581946407065</updated>
       <workItem from="1581946408841" duration="5014000" />
+      <workItem from="1585235593700" duration="1162000" />
     </task>
     <servers />
   </component>

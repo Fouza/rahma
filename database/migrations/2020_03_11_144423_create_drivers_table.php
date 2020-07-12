@@ -20,11 +20,10 @@ class CreateDriversTable extends Migration
             $table->string('email')->unique()->nullable();
             $table->string('phone')->nullable();
             $table->string('permis')->nullable();
+            $table->string('photo')->nullable();
             $table->string('adressePostal')->nullable();
             $table->datetime('permisFin')->nullable();
             $table->json('platforms')->nullable();
-            $table->unsignedBigInteger('car_id');
-            $table->foreign('car_id')->references('id')->on('cars');
             $table->timestamps();
         });
     }

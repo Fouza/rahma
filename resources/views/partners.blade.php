@@ -55,85 +55,62 @@
         </div>
     </div>
     <h1>Les propriétaires</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card card-success">
-              <div class="card-header">
-                <h3 class="card-title">Nabil</h3>
+    @foreach($partners1 as $partner)
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-success">
+                    <div class="card-header">
+                        <h3 class="card-title">{{ $partner->nom. ' ' .$partner->prenom }} </h3>
+                        <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                        </button>
+                        </div>
+                        <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body" style="display: block;">
+                        Propriétaire de <strong>{{ $partner->nbCars }} véhicules</strong> <br>
+                        <strong>{{ $partner->nbLoue }}</strong> sont en cours de location
+                        <br>
 
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
+                    </div>
+                    <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
                 </div>
-                <!-- /.card-tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body" style="display: block;">
-                Propriétaire de <strong>120 véhicules</strong> <br>
-                <strong>90</strong> sont en cours de location
-                <br>
-
-              </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-          </div>
-    </div>
-    <div class="row">
-          <div class="col-md-6">
-            <div class="card card-success">
-              <div class="card-header">
-                <h3 class="card-title">Nazih</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
-                </div>
-                <!-- /.card-tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body" style="display: block;">
-                Propriétaire de <strong>100 véhicules</strong> <br>
-                <strong>80</strong> sont en cours de location
-                <br>
-
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-    </div>
+    @endforeach
     <br><br>
     <h1>Partenaires externes</h1>
-    <div class="row">
+    @foreach($partners2 as $partner)
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">{{ $partner->nom. ' ' . $partner->prenom }}</h3>
 
-        <div class="col-md-6">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Fouzi</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
+                        <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                        </button>
+                        </div>
+                        <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body" style="display: block;">
+                        Propriétaire de <strong>{{ $partner->nbCars }} véhicules</strong> <br>
+                        <strong>{{ $partner->nbLoue }}</strong> sont en cours de location <br>
+                        Date d'adhésion : {{ $partner->adhesion }}
+                        <br>
+                        <strong>Email : </strong>{{ $partner->email }}
+                        <br>
+                        <strong>N°Téléphone : </strong>{{ $partner->phone }}
+                    </div>
+                    <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
                 </div>
-                <!-- /.card-tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body" style="display: block;">
-                Propriétaire de <strong>15 véhicules</strong> <br>
-                <strong>5</strong> sont en cours de location <br>
-                Date d'adhésion : 02/01/2020
-                <br>
-                <strong>Email : </strong>gf_oukacha@esi.dz
-                <br>
-                <strong>N°Téléphone : </strong> 0556530464
-              </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-          </div>
-    </div>
-
+    @endforeach
     <br><br><br>
 @stop
 

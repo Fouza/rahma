@@ -17,23 +17,20 @@ class CreateCarsTable extends Migration
             $table->bigIncrements('id');
             $table->string('marque')->nullable();
             $table->string('model')->nullable();
-            $table->string('matricule');
-            $table->string('etat');
+            $table->string('matricule')->unique();
+            $table->string('etat')->default('Disponible');
             /*$table->datetime('ctrlTechDebut')->nullable();
             $table->datetime('assuranceDebut')->nullable();
             $table->datetime('ctrlTechFin')->nullable();
             $table->datetime('assuranceFin')->nullable();*/
             $table->integer('capacite')->nullable();
             $table->year('year')->nullable();
+            $table->string('photo')->nullable();
             $table->unsignedBigInteger('driver_id')->nullable();
             $table->unsignedBigInteger('partner_id');
-            $table->unsignedBigInteger('ctrl_id')->nullable();
-            $table->unsignedBigInteger('assurance_id')->nullable();
 
             $table->foreign('driver_id')->references('id')->on('drivers');
             $table->foreign('partner_id')->references('id')->on('partners');
-            $table->foreign('ctrl_id')->references('id')->on('controles');
-            $table->foreign('assurance_id')->references('id')->on('assurances');
             $table->timestamps();
         });
     }

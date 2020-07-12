@@ -15,9 +15,11 @@ class CreateAssurancesTable extends Migration
     {
         Schema::create('assurances', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('assurance');
+            $table->string('assurance')->nullable();
+            //$table->datetime('assuranceDebut')->nullable();
+            $table->datetime('assuranceFin')->nullable();
             $table->unsignedBigInteger('car_id');
-            $table->foreign('car_id')->references('id')->on('cars');
+            $table->foreign('car_id')->references('id')->on('cars')->delete('cascade');
             $table->timestamps();
         });
     }

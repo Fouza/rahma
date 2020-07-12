@@ -16,13 +16,15 @@ class CreateLocationsTable extends Migration
         Schema::create('locations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('driver_id');
+            $table->string('nom');
+            $table->string('prenom');
             $table->unsignedBigInteger('car_id');
             $table->string('matricule');
             $table->datetime('dateDebut');
             $table->datetime('dateFin');
-            $table->string('contrat');
+            $table->string('contrat')->nullable();
             $table->foreign('driver_id')->references('id')->on('drivers');
-            $table->foreign('car_id')->references('id')->on('cars');
+            $table->foreign('car_id')->references('id')->on('cars')->delete('cascade');
             $table->timestamps();
         });
     }

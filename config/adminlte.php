@@ -192,7 +192,7 @@ return [
         ],
         [
             'text'        => 'Voitures',
-            'url'         => '/parc',
+            'url'         => 'car/parc',
             'icon'        => 'fas fa-car-side',
             //'label'       => 6,
             'label_color' => 'success',
@@ -206,7 +206,7 @@ return [
         ],
         [
             'text'        => 'Plateforme',
-            'url'         => '/clients',
+            'url'         => '/platforms',
             'icon'        => 'fas fa-chalkboard-teacher',
             //'label'       => 6,
             'label_color' => 'success',

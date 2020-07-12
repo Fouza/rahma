@@ -17,8 +17,8 @@ class CreatePartnersTable extends Migration
             $table->bigIncrements('id');
             $table->string('nom');
             $table->string('prenom');
-            $table->string('email')->unique();
-            $table->string('phone');
+            $table->string('email')->unique()->nullable();
+            $table->string('phone')->nullable();
             $table->datetime('adhesionDate')->nullable();
             $table->timestamps();
         });

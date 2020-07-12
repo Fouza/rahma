@@ -37,7 +37,7 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
-            'url' => env('DATABASE_URL'),
+            'url' => 'https://rahmaaccountment.herokuapp.com/',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
@@ -45,12 +45,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'http://rahmaaccountment.herokuapp.com/'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'rahmadb'),
-            'username' => env('DB_USERNAME', 'root1998'),
-            'password' => env('DB_PASSWORD', '1998project'),
+            'url' => 'https://rahmaaccountment.herokuapp.com/',
+            'host' => 'db4free.net',
+            'port' => '3306',
+            'database' => 'rahmadb',
+            'username' => 'root1998',
+            'password' => '1998project',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

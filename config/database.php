@@ -45,7 +45,6 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => 'http://rahmaaccountment.herokuapp.com/',
             'host' => 'db4free.net',
             'port' => '3306',
             'database' => 'rahmadb',

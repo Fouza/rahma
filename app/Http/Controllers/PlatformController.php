@@ -25,7 +25,7 @@ class PlatformController extends Controller
         $cpt=0;
         foreach($platforms as $platform){
 
-            $palette = Palette::fromFilename(storage_path().'\app\public\\'.$platform->logo);
+            $palette = Palette::fromFilename(storage_path().'/app/public//'.$platform->logo);
             //$col = $palette->getMostUsedColors(1);
             $extractor = new ColorExtractor($palette);
             $ext = $extractor->extract(1);

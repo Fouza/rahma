@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PlatformUpdateRequest extends BaseFormRequest
+class PlatformUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

@@ -20,8 +20,9 @@
 @section('content')
 <p>Consulter vos véhciules et suivez leurs états actuels : disponible ou louée.</p>
 @if($errors->any())
-    {!! implode('', $errors->all('<div>:message</div>')) !!}
+{!! implode('', $errors->all('<div>:message</div>')) !!}
 @endif
+
 <div class="row float-right">
     <div class="col-lg-12 operations">
         <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModalLong">Ajouter une voiture</button>
@@ -36,16 +37,28 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
                         <form action="{{ url('car/store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label for="marque">Marque</label>
-                                <input type="" class="form-control" name="marque" placeholder="Entrez la marque">
+                                <select class="custom-select" name="marque">
+                                    @foreach($brands as $brand)
+                                    <option value={{ $brand->NAME_BRAND }} type="hidden">{{ $brand->NAME_BRAND }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="model">Modèle</label>
-                                <input type="" class="form-control" name="model" placeholder="Entrez le modèle">
+                                <select class="custom-select" name="marque">
+                                    @foreach($models as $item)
+                                    @php
+                                    $class = $item->brand;
+                                    @endphp
+                                    @foreach($item->models as $model)
+                                    <option class={{ $class." option" }} value={{ $model }} type="hidden">{{ $model }}</option>
+                                    @endforeach
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="matricule">Matricule</label>
@@ -422,7 +435,21 @@ $cpt=4
 
         </script>
         <script>
-            $('.card-btn').CardWidget('maximizeTrigger')
+            $('.card-btn').CardWidget('maximizeTrigger');
 
         </script>
+        {{-- <script>
+            function showOption(value) {
+                $(".option").each(function(element) {
+                    console.log(element);
+                    if (element.hasClass(value)) {
+                        element.show();
+                    } else {
+                        element.hide();
+                    }
+                })
+            }
+
+        </script>  --}}
+
         @stop

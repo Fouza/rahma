@@ -27,6 +27,11 @@ class CarController extends Controller
      */
     public function index()
     {
+        $list1 = storage_path('app\public\carbrands.json');
+        $arrayBrands = json_decode(file_get_contents($list1));
+        $list2 = storage_path('app\public\carmodels.json');
+        $arrayModels = json_decode(file_get_contents($list2));
+        // dd($arrayBrands[0]->name);
         $partners = Partner::all();
         $cars = Car::all()->sortByDesc('created_at');
         $now = Carbon::now();
@@ -40,7 +45,11 @@ class CarController extends Controller
                     $car->bgCtrl = 'danger';
                 }else{
                     $rest = $now->diffInDays($end);
-                    $ctrlCar = (365-$rest)*100/365;
+                    if($rest > 365){
+                        $ctrlCar=0;
+                    }else{
+                        $ctrlCar = (365-$rest)*100/365;
+                    }
 
                     if($ctrlCar < 50){
                         $car->bgCtrl = 'success';
@@ -67,7 +76,11 @@ class CarController extends Controller
                     $car->bgAss = 'danger';
                 }else{
                     $rest = $now->diffInDays($end);
-                    $assCar = (365-$rest)*100/365;
+                    if($rest > 365){
+                        $assCar = 0;
+                    }else{
+                        $assCar = (365-$rest)*100/365;
+                    }
                     if($assCar < 50){
                         $car->bgAss = 'success';
                         if($assCar<=0){
@@ -101,7 +114,7 @@ class CarController extends Controller
             //$car->cContrat = $controle;
             //$car->aContrat = $assurance;
         }
-        return view('parc')->with('partners',$partners)->with('cars',$cars);
+        return view('parc')->with('partners',$partners)->with('cars',$cars)->with('brands',$arrayBrands)->with('models',$arrayModels);
     }
 
     public function downloadControle($carId){

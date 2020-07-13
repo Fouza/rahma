@@ -232,7 +232,7 @@ $cpt=4
                 <a type="button" class="btn btn-primary footer-btn" href="{{route('editcar',['carId'=>$car->id])}}">Modifier</a>
                 <a type="button" class="btn btn-danger footer-btn" href="{{ route('cardel',['carId'=>$car->id]) }} ">Supprimer</a>
                 <div class="progress progress-xs">
-                    <div class="progress-bar bg-{{$car->bgCtrl}}" style="width:{{ $car->ctrl }} ;height:100%;"></div>
+                    <div class="progress-bar bg-{{$car->bgCtrl}}" style="width:{{ $car->ctrl }}%;height:100%;"></div>
                 </div>
             </div>
         </div>

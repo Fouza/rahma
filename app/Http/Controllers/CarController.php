@@ -114,7 +114,6 @@ class CarController extends Controller
             //$car->cContrat = $controle;
             //$car->aContrat = $assurance;
         }
-        dd($cars);
         return view('parc')->with('partners',$partners)->with('cars',$cars)->with('brands',$arrayBrands)->with('models',$arrayModels);
     }
 

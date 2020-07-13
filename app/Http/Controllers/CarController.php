@@ -45,11 +45,8 @@ class CarController extends Controller
                     $car->bgCtrl = 'danger';
                 }else{
                     $rest = $now->diffInDays($end);
-                    if($rest > 365){
-                        $ctrlCar=0;
-                    }else{
+
                         $ctrlCar = (365-$rest)*100/365;
-                    }
 
                     if($ctrlCar < 50){
                         $car->bgCtrl = 'success';
@@ -76,11 +73,8 @@ class CarController extends Controller
                     $car->bgAss = 'danger';
                 }else{
                     $rest = $now->diffInDays($end);
-                    if($rest > 365){
-                        $assCar = 0;
-                    }else{
                         $assCar = (365-$rest)*100/365;
-                    }
+
                     if($assCar < 50){
                         $car->bgAss = 'success';
                         if($assCar<=0){

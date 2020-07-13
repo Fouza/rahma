@@ -27,9 +27,9 @@ class CarController extends Controller
      */
     public function index()
     {
-        $list1 = storage_path('app\public\carbrands.json');
+        $list1 = storage_path('app/public/carbrands.json');
         $arrayBrands = json_decode(file_get_contents($list1));
-        $list2 = storage_path('app\public\carmodels.json');
+        $list2 = storage_path('app/public/carmodels.json');
         $arrayModels = json_decode(file_get_contents($list2));
         // dd($arrayBrands[0]->name);
         $partners = Partner::all();
